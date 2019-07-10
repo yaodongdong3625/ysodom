@@ -1,0 +1,13 @@
+imu_port_name: /dev/ttyUSB0
+
+use_imu_compensate: false   # 是否集成 IMU
+publish_tf: true           
+
+wheel_radius: 0.0845        # need modify 轮子半径
+wheel_separation: 0.53575   # need modify 底盘 两个轮子之间的距离，测量轮子中间位置, 以前的是 0.28
+wheel_reduction_radio: 1.0  # need modify 减速比
+
+encoder_resolution: 5600    # need modify 轮子转一圈增加的编码器数值，文档说是 1400
+publish_rate: 50
+controller_rate: 20
+cmd_time_out: 1000    #ms

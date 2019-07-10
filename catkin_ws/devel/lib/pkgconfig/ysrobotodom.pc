@@ -1,0 +1,8 @@
+prefix=/home/ydd/ysodom/catkin_ws/devel
+
+Name: ysrobotodom
+Description: Description of ysrobotodom
+Version: 0.0.0
+Cflags: -I/home/ydd/ysodom/catkin_ws/devel/include -I/home/ydd/ysodom/catkin_ws/src/ysrobotodom/include
+Libs: -L/home/ydd/ysodom/catkin_ws/devel/lib -lysrobotodom
+Requires: 

@@ -1,0 +1,2 @@
+encoder:ysrobotodom
+-G Ninja -DCATKIN_DEVEL_PREFIX=/home/ydd/ysodom/catkin_ws/devel_isolated -DCMAKE_INSTALL_PREFIX=/home/ydd/ysodom/catkin_ws/install_isolated

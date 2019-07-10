@@ -1,0 +1,57 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(ysrobotodom)
+
+
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  message_generation
+  std_msgs
+  nav_msgs
+  tf
+  
+)
+
+
+add_message_files(
+  DIRECTORY msg FILES robotencoder.msg
+)
+
+
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
+
+
+catkin_package()
+
+###########
+## Build ##
+###########
+
+## Specify additional locations of header files
+## Your package locations should be listed before other locations
+
+include_directories(
+  include
+  ${catkin_INCLUDE_DIRS}
+)
+ 
+ 
+add_executable(${PROJECT_NAME}_node src/robotodom.cpp  src/base_controller.cpp  src/odometry.cpp)
+
+target_link_libraries(${PROJECT_NAME}_node   
+  ${catkin_LIBRARIES}
+)
+
+add_dependencies(${PROJECT_NAME}_node ysrobotodom_generate_messages_cpp)
+
+#############
+## Install ##
+#############
+install(DIRECTORY msg 
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)
+ 
+

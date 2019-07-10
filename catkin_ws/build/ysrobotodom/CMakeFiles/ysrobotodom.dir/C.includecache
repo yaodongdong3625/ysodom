@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ydd/ysodom/catkin_ws/src/ysrobotodom/include/imu/imu_data_decode.h
+stdint.h
+-
+stdbool.h
+-
+
+/home/ydd/ysodom/catkin_ws/src/ysrobotodom/include/imu/packet.h
+stdint.h
+-
+stdbool.h
+-
+
+/home/ydd/ysodom/catkin_ws/src/ysrobotodom/src/imu/imu_data_decode.c
+string.h
+-
+stdio.h
+-
+packet.h
+/home/ydd/ysodom/catkin_ws/src/ysrobotodom/src/imu/packet.h
+imu_data_decode.h
+/home/ydd/ysodom/catkin_ws/src/ysrobotodom/src/imu/imu_data_decode.h
+
+/home/ydd/ysodom/catkin_ws/src/ysrobotodom/src/imu/packet.c
+string.h
+-
+stdio.h
+-
+packet.h
+/home/ydd/ysodom/catkin_ws/src/ysrobotodom/src/imu/packet.h
+

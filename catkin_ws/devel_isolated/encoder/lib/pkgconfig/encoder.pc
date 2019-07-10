@@ -1,0 +1,8 @@
+prefix=/home/ydd/ysodom/catkin_ws/devel_isolated/encoder
+
+Name: encoder
+Description: Description of encoder
+Version: 0.0.0
+Cflags: -I/home/ydd/ysodom/catkin_ws/devel_isolated/encoder/include
+Libs: -L/home/ydd/ysodom/catkin_ws/devel_isolated/encoder/lib 
+Requires: 
